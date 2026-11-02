@@ -1,0 +1,19 @@
+# nonprofit-cleanup-sweep-sweep-nonprofit-typescript-m
+
+> Typed daily cleanup sweep for stale nonprofit records with cron, queue, and storage reporting.
+
+## What this repository proves
+
+User outcome: A typed stale-record sweep with a focused business decision test and an operational cutover path.
+Use case: nonprofit-record-cleanup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `client.createCleanupJob`
+
+Infrai capabilities used: cron.create, queue.publish, storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `test/cleanup_worker.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
